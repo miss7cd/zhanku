@@ -1,23 +1,20 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+    <page-header></page-header>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
+import pageHeader from '@/components/page-header/page-header'
 export default {
-  name: 'App'
+  name: 'App',
+  conponents: {
+    pageHeader
+  }
 }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+@import './assets/less/base.less';
 </style>
