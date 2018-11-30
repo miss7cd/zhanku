@@ -9,7 +9,7 @@
 import pageHeader from '@/components/page-header/page-header'
 export default {
   name: 'App',
-  conponents: {
+  components: {
     pageHeader
   }
 }
