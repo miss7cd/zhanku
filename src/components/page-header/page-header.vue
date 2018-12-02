@@ -29,6 +29,11 @@
         <div class="menu-list-box">课程</div>
       </li>
     </ul>
+    <div class="login-wrapper">
+      <div class="login">登陆</div>
+      <span></span>
+      <div class="register">注册</div>
+    </div>
   </header>
 </template>
 
@@ -39,10 +44,13 @@ export default {}
 <style lang="less">
 @import "./../../assets/less/mixin.less";
 .page-header {
+  padding-left: 30px;
+  padding-right: 30px;
   width: 100%;
   background-color: @theme_color;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   .logo {
     img {
       width: 120px;
@@ -51,6 +59,7 @@ export default {}
   }
   .menu-list-wrapper {
     display: flex;
+    // flex: 1;
     li {
       .menu-list-box {
         font-size: 14px;
@@ -67,6 +76,19 @@ export default {}
         font-weight: bold;
       }
     }
+  }
+  .login-wrapper{
+      display: flex;
+      align-items: center;
+      .login,.register{
+          padding: 10px;
+      }
+      span{
+          display: block;
+          width: 1px;
+          height: 14px;
+          background-color: #333;
+      }
   }
 }
 </style>
